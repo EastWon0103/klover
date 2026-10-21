@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>S02 빈 받은편지함 — Klover</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<style>
+.empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px}
+.empty .ill{width:112px;height:112px;border-radius:28px;background:var(--clover-50);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.ready{width:560px;margin-top:40px;text-align:left}
+.ready .r{display:flex;align-items:center;height:40px;border-bottom:1px solid var(--g100);font-size:14px}
+.ready .r .st{margin-left:auto;font-size:13px;display:flex;align-items:center;gap:6px}
+.st.on{color:var(--clover-700);font-weight:600}.st.wait{color:var(--g500)}
+.st.on::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--clover-500)}
+.st.wait::before{content:"";width:8px;height:8px;border-radius:50%;border:1.5px solid var(--g400)}
+</style></head>
+<body><div class="canvas" style="position:relative">
+<div class="win" data-nav="inbox" data-empty="1">
+  <section class="empty">
+    <div class="ill"><img src="../../brand/klover-mark.svg" width="64" alt=""></div>
+    <div class="h-heading">받은편지함이 비어 있습니다</div>
+    <div class="muted" style="margin-top:8px;font-size:15px;line-height:24px">지금부터 도착하는 메일을 AI가 분석합니다.<br>이전 메일은 가져오지 않습니다. <span style="color:var(--g400)">(Gmail에 있는 기존 메일은 Gmail에서 확인하세요)</span></div>
+    <div class="row gap8" style="margin-top:20px"><span class="btn btn-primary"><i data-i="pen"></i>새 메일 쓰기</span><span class="btn btn-secondary"><i data-i="user"></i>프로필 확인</span></div>
+    <div class="ready">
+      <div class="label" style="margin-bottom:6px">기능 준비 상태</div>
+      <div class="r">AI 분류 · AI 스캔 알림<span class="st on">바로 사용</span></div>
+      <div class="r">답장 초안<span class="st on">바로 사용 (문체 설정 기준)</span></div>
+      <div class="r">자연어 검색<span class="st wait">메일이 쌓이는 대로</span></div>
+      <div class="r">주간 보고<span class="st wait">사용 1주 후부터</span></div>
+      <div class="r" style="border:0">문체 학습<span class="st wait">보낸 메일이 쌓이는 대로 · 0건</span></div>
+    </div>
+  </section>
+</div>
+<span class="annot" style="left:640px;top:296px">1</span>
+<span class="annot" style="left:1020px;top:458px">2</span>
+<span class="annot" style="left:516px;top:538px">3</span>
+</div>
+<script src="assets/shell.js"></script><script src="assets/icons.js"></script>
+</body></html>

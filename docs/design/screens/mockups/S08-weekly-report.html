@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>S08 주간 보고 — Klover</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<style>
+.wr{flex:1;display:flex;flex-direction:column;min-width:0}
+.ctl{display:flex;align-items:flex-end;gap:12px;padding:14px 24px;border-bottom:1px solid var(--border)}
+.ctl .field .input{min-width:180px;justify-content:space-between;font-size:13px}
+.wrb{flex:1;display:flex;min-height:0}
+.doc{flex:1;padding:22px 32px;min-width:0}
+.sec{margin-top:18px}
+.sec .st{font-size:15px;font-weight:700;padding-bottom:6px;border-bottom:1px solid var(--g200);margin-bottom:6px}
+.it{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:6px;font-size:14px;line-height:22px}
+.it .tx{flex:1}
+.it.on{background:var(--ai-subtle);outline:1px solid var(--ai-border)}
+.ev{flex-shrink:0;font-size:11px;font-weight:700;height:20px;padding:0 6px;border-radius:4px;border:1px solid var(--ai-border);color:var(--ai-text);background:#fff;display:flex;align-items:center}
+.it.on .ev{background:var(--ai);color:#fff;border-color:var(--ai)}
+.side{width:300px;border-left:1px solid var(--border);background:var(--g25);padding:18px;display:flex;flex-direction:column}
+.em{padding:10px 0;border-bottom:1px solid var(--g100)}
+.em b{font-size:13px}
+.scope .r{display:flex;font-size:13px;height:26px;align-items:center}
+.scope .r span:last-child{margin-left:auto;font-weight:700}
+.wfoot{display:flex;align-items:center;gap:8px;padding:12px 24px;border-top:1px solid var(--border)}
+</style></head>
+<body><div class="canvas" style="position:relative">
+<div class="win" data-nav="report">
+  <section class="wr">
+    <div class="ctl">
+      <div class="field"><span class="caption">기간</span><span class="input">10월 2주차 (10/5 – 10/9) <i data-i="down"></i></span></div>
+      <div class="field"><span class="caption">양식</span><span class="input">내 양식 (개조식) <i data-i="down"></i></span></div>
+      <div class="field"><span class="caption">보고 대상</span><span class="input">이수진 팀장 <i data-i="down"></i></span></div>
+      <span class="grow"></span><span class="btn btn-ai"><i data-i="refresh"></i>다시 만들기</span>
+    </div>
+    <div class="wrb">
+      <div class="doc">
+        <div class="h-heading">재무팀 주간 업무 보고 (10/5 – 10/9)</div>
+        <div class="caption" style="margin-top:4px">홍길동 과장 · 작성 10/12(월) · 한글날(10/9) 휴무 반영 · <span style="color:var(--ai-text)">◆ AI 작성 — 내용을 바로 고칠 수 있어요</span></div>
+        <div class="sec"><div class="st">1. 금주 주요 업무</div>
+          <div class="it"><span class="tx">· 3분기 결산 1차 마감 완료 (10/7), 부서별 예산 집행률 92.4% 집계</span><span class="ev">근거 4</span></div>
+          <div class="it"><span class="tx">· 9월 법인카드 정산 완료, 증빙 누락 6건 해당 부서에 보완 요청</span><span class="ev">근거 3</span></div></div>
+        <div class="sec"><div class="st">2. 진행 중인 업무</div>
+          <div class="it"><span class="tx">· 4분기 예산 재배정: 영업기획팀 요청분 검토 중, 10/16 집행 현황 자료 송부 예정</span><span class="ev">근거 2</span></div>
+          <div class="it"><span class="tx">· 한빛회계법인 중간감사 현장 일정 협의 중 (10/27–29 후보)</span><span class="ev">근거 2</span></div></div>
+        <div class="sec"><div class="st">3. 이슈·요청사항</div>
+          <div class="it on"><span class="tx">· 해외 출장비 예산 초과분(약 1,200만 원) 처리 기준 결정 필요 → 팀장님 검토 요청</span><span class="ev">근거 3</span></div></div>
+        <div class="sec"><div class="st">4. 차주 계획</div>
+          <div class="it"><span class="tx">· 10/16 3분기 결산 리뷰 회의 참석 및 자료 준비</span><span class="ev">근거 1</span></div>
+          <div class="it"><span class="tx">· 4분기 사업계획 초안 재무 검토 의견 회신 (10/20 마감)</span><span class="ev">근거 1</span></div></div>
+      </div>
+      <aside class="side">
+        <div class="label">선택한 항목의 근거 메일</div>
+        <div class="caption" style="margin:2px 0 6px">해외 출장비 예산 초과분</div>
+        <div class="em"><b>해외 출장비 예산 초과분 처리 문의</b><div class="caption">정혜원 대리 → 나 · 9/18</div></div>
+        <div class="em"><b>RE: 출장비 초과분 관련 재문의</b><div class="caption">정혜원 대리 → 나 · 10/6</div></div>
+        <div class="em"><b>FW: 출장비 집행 기준 검토 부탁</b><div class="caption">이수진 팀장 → 나 · 10/8</div></div>
+        <div class="grow"></div>
+        <div class="scope"><div class="label" style="margin-bottom:6px">포함 범위</div>
+          <div class="r"><span>기간 내 메일</span><span>86건</span></div>
+          <div class="r"><span>업무로 묶인 메일</span><span>41건 (7개 업무)</span></div>
+          <div class="r"><span>제외 (뉴스레터·공지 등)</span><span>45건</span></div>
+          <div style="font-size:13px;color:var(--ai-text);font-weight:600;margin-top:6px">제외된 메일 보기 ›</div></div>
+      </aside>
+    </div>
+    <div class="wfoot"><span class="btn btn-secondary"><i data-i="copy"></i>복사</span><span class="btn btn-secondary"><i data-i="download"></i>Word로 내보내기</span><span class="grow"></span><span class="btn btn-primary"><i data-i="send"></i>이수진 팀장에게 메일로 보내기</span></div>
+  </section>
+</div>
+<span class="annot" style="left:816px;top:132px">1</span>
+<span class="annot" style="left:224px;top:200px">2</span>
+<span class="annot" style="left:1110px;top:510px">3</span>
+<span class="annot" style="left:1270px;top:132px">4</span>
+<span class="annot" style="left:1240px;top:688px">5</span>
+<span class="annot" style="left:1166px;top:856px">6</span>
+</div>
+<script src="assets/shell.js"></script><script src="assets/icons.js"></script>
+</body></html>

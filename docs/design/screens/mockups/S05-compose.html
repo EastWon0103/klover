@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>S05 새 메일 작성 — Klover</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<style>
+.compose{flex:1;display:flex;flex-direction:column;min-width:0}
+.cf{display:flex;align-items:center;min-height:48px;border-bottom:1px solid var(--g100);padding:0 24px;gap:12px}
+.cf .k{width:64px;color:var(--g500);font-size:13px}
+.rcpt{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 6px 0 4px;border-radius:14px;background:var(--g100);font-size:13px}
+.rcpt .av{width:20px;height:20px;border-radius:50%;background:var(--clover-100);color:var(--clover-700);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.edtool{display:flex;gap:2px;padding:8px 20px;border-bottom:1px solid var(--g100);color:var(--g600)}
+.edtool span{width:30px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.edbody{flex:1;padding:20px 24px;font-size:15px;line-height:26px;color:var(--g800)}
+.sig{color:var(--g500);font-size:13px;line-height:20px;border-top:1px dashed var(--g200);padding-top:10px;margin-top:22px}
+.att{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 12px;border:1px solid var(--border);border-radius:8px;font-size:13px}
+.cfoot{display:flex;align-items:center;gap:8px;padding:12px 24px;border-top:1px solid var(--border)}
+.ac{position:absolute;left:330px;top:44px;width:340px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(20,23,28,.12);padding:6px;z-index:5}
+.ac .o{display:flex;gap:10px;align-items:center;padding:8px;border-radius:6px;font-size:13px}
+.ac .o.on{background:var(--g100)}
+</style></head>
+<body><div class="canvas" style="position:relative">
+<div class="win" data-nav="draft">
+  <section class="compose">
+    <div class="rtool"><b style="font-size:16px">새 메일</b><span class="grow"></span><span class="caption">임시 저장됨 · 09:41</span></div>
+    <div class="cf" style="position:relative"><span class="k">받는 사람</span><span class="rcpt"><span class="av">박</span>박지훈 (영업기획팀) <span style="color:var(--g400)">×</span></span><span class="muted">이</span>
+      <div class="ac"><div class="caption" style="padding:4px 8px">자주 연락하는 사람</div>
+        <div class="o on"><span class="avatar" style="width:28px;height:28px;font-size:12px">이</span><div><b>이수진 팀장</b> · 재무팀<div class="caption">sj.lee@company.com</div></div></div>
+        <div class="o"><span class="avatar" style="width:28px;height:28px;font-size:12px;background:#FFE9EE;color:#BE123C">이</span><div><b>이도윤 회계사</b> · 한빛회계법인<div class="caption">dy.lee@hanbit-cpa.kr</div></div></div>
+      </div></div>
+    <div class="cf"><span class="k">참조</span></div>
+    <div class="cf"><span class="k">제목</span><span style="font-size:15px">3분기 부서별 예산 집행 현황 송부</span></div>
+    <div class="edtool"><span>B</span><span style="font-style:italic">I</span><span style="text-decoration:underline">U</span><span><i data-i="link"></i></span><span><i data-i="clip"></i></span><span>≡</span></div>
+    <div class="edbody">
+      안녕하세요, 재무팀 홍길동입니다.<br><br>
+      요청하신 3분기 부서별 예산 집행 현황을 첨부와 같이 송부드립니다.<br>
+      마케팅비와 출장비는 월별로 구분해 정리했습니다.<br><br>
+      확인 부탁드립니다.<br>감사합니다. 홍길동 드림
+      <div class="sig">홍길동 과장 | 경영지원본부 재무팀<br>02-1234-5678 | hong.gildong@company.com</div>
+      <div style="margin-top:20px"><span class="att"><i data-i="file"></i>3분기_부서별_집행현황.xlsx <span class="caption">48 KB</span><span style="color:var(--g400)">×</span></span></div>
+    </div>
+    <div class="cfoot"><span class="btn btn-primary"><i data-i="send"></i>보내기</span><span class="btn btn-secondary">임시 저장</span><span class="btn btn-ghost"><i data-i="clip"></i>첨부</span><span class="grow"></span><span class="btn btn-ghost"><i data-i="trash"></i>삭제</span></div>
+  </section>
+</div>
+<span class="annot" style="left:540px;top:130px">1</span>
+<span class="annot" style="left:860px;top:378px">2</span>
+<span class="annot" style="left:640px;top:610px">3</span>
+<span class="annot" style="left:232px;top:832px">4</span>
+</div>
+<script src="assets/shell.js"></script><script src="assets/icons.js"></script>
+</body></html>

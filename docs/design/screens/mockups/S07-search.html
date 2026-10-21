@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>S07 자연어 검색 — Klover</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<style>
+.sr{flex:1;display:flex;flex-direction:column;min-width:0}
+.understood{display:flex;align-items:center;gap:8px;padding:14px 24px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.res{flex:1;display:flex;min-height:0}
+.resmain{flex:1;padding:18px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.answer{line-height:24px}
+.rc{border:1px solid var(--border);border-radius:10px;padding:12px 14px;display:flex;gap:12px}
+.rc .no{width:22px;height:22px;border-radius:6px;background:var(--ai);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rc .q{font-size:13px;color:var(--g600);border-left:2px solid var(--g200);padding-left:8px;margin:4px 0 8px}
+.rc mark{background:var(--ai-hl);color:inherit;padding:0 1px}
+.why{font-size:12px;color:var(--g500)}
+.fpanel{width:260px;border-left:1px solid var(--border);padding:18px;display:flex;flex-direction:column;gap:16px;background:var(--g25)}
+.followup{display:flex;align-items:center;gap:8px;height:44px;border:1px dashed var(--g300);border-radius:10px;padding:0 14px;color:var(--g400);font-size:13px}
+.badge2{margin-left:auto;font-size:11px;padding:2px 6px;border-radius:4px;background:var(--g100);color:var(--g500)}
+</style></head>
+<body><div class="canvas" style="position:relative">
+<div class="win" data-nav="" data-search="지난달 영업기획팀이랑 주고받은 예산 관련 메일 중에 아직 답 안 한 거 찾아줘">
+  <section class="sr">
+    <div class="understood"><span style="font-size:13px;font-weight:700;color:var(--ai-text)">이렇게 이해했어요</span>
+      <span class="chip"><span class="k">기간</span>2026년 9월<span class="x">×</span></span>
+      <span class="chip"><span class="k">상대</span>영업기획팀<span class="x">×</span></span>
+      <span class="chip"><span class="k">주제</span>예산<span class="x">×</span></span>
+      <span class="chip"><span class="k">상태</span>내가 회신 안 함<span class="x">×</span></span>
+      <span class="chip add">+ 조건 추가</span>
+      <span class="grow"></span><span class="btn btn-ghost btn-sm">‹ 받은편지함으로</span>
+    </div>
+    <div class="res">
+      <div class="resmain">
+        <div class="ai-box answer"><div class="hd">◆ AI 답변</div>
+          지난달(9월) 영업기획팀과 주고받은 예산 관련 메일 중 아직 회신하지 않은 메일은 <b>3건</b>입니다. 가장 오래된 것은 박지훈 과장의 '판촉비 예산 전용 가능 여부'로 35일째 답이 없습니다<span class="cite">3</span>. 정혜원 대리의 출장비 초과분 문의는 10월 결산 전에 처리 기준이 필요해 보입니다<span class="cite">2</span>.</div>
+        <div class="row"><span class="label">조건에 맞는 메일 3건</span><span class="grow"></span><span class="caption">관련도순 ▾</span></div>
+        <div class="rc"><span class="no">1</span><div class="grow">
+          <div class="row"><span class="caption"><b style="color:var(--g800)">박지훈 과장</b> (영업기획팀)</span><span class="grow"></span><span class="caption">9월 24일</span></div>
+          <div class="h-title" style="font-size:15px">4분기 재배정 사전 협의 요청</div>
+          <div class="q">"…4분기 <mark>예산 재배정</mark> 전에 재무팀과 사전 협의를 한번 하고 싶습니다…"</div>
+          <div class="row gap6"><span class="tag c-work">업무 요청</span><span class="tag s-reply">미회신 20일</span><span class="why">'예산 재배정'이 주제와 일치</span><span class="grow"></span><span class="btn btn-ai-outline btn-sm">◆ 답장 초안</span></div></div></div>
+        <div class="rc"><span class="no">2</span><div class="grow">
+          <div class="row"><span class="caption"><b style="color:var(--g800)">정혜원 대리</b> (영업기획팀)</span><span class="grow"></span><span class="caption">9월 18일</span></div>
+          <div class="h-title" style="font-size:15px">해외 출장비 예산 초과분 처리 문의</div>
+          <div class="q">"…9월 해외 출장비가 배정액을 약 1,200만 원 <mark>초과</mark>했는데 처리 기준을…"</div>
+          <div class="row gap6"><span class="tag c-work">업무 요청</span><span class="tag s-reply">미회신 26일</span><span class="why">'출장비 초과'가 예산 주제와 의미상 가까움</span><span class="grow"></span><span class="btn btn-ai-outline btn-sm">◆ 답장 초안</span></div></div></div>
+        <div class="rc"><span class="no">3</span><div class="grow">
+          <div class="row"><span class="caption"><b style="color:var(--g800)">박지훈 과장</b> (영업기획팀)</span><span class="grow"></span><span class="caption">9월 9일</span></div>
+          <div class="h-title" style="font-size:15px">판촉비 예산 전용 가능 여부 문의드립니다</div>
+          <div class="q">"…남은 판촉비를 행사비로 <mark>전용</mark>할 수 있는지 확인 부탁드립니다…"</div>
+          <div class="row gap6"><span class="tag c-work">업무 요청</span><span class="tag s-reply">미회신 35일</span><span class="why">'예산 전용'이 주제와 일치</span><span class="grow"></span><span class="btn btn-ai-outline btn-sm">◆ 답장 초안</span></div></div></div>
+        <div class="caption">조건을 일부만 만족하는 메일 2건 <span style="color:var(--ai-text);font-weight:600">더 보기 ▾</span></div>
+        <div class="followup">◆ 이어서 질문하기… 예: 이 중에 제일 급한 거 답장 써줘<span class="badge2">2차</span></div>
+      </div>
+      <aside class="fpanel">
+        <div class="label">필터</div>
+        <div class="field"><span class="caption">기간</span><span class="input" style="font-size:13px">2026.09.01 – 09.30</span></div>
+        <div class="field"><span class="caption">카테고리</span><div class="row gap4"><span class="tag c-work">업무 요청</span><span class="tag c-report">보고·공유</span></div></div>
+        <div class="field"><span class="caption">첨부파일</span><div class="seg" style="height:32px"><span class="on">전체</span><span>있음</span></div></div>
+        <div class="divider"></div>
+        <div class="field"><span class="label">최근 검색</span>
+          <span class="caption" style="color:var(--g700)">중간감사 관련 회계법인 메일</span>
+          <span class="caption" style="color:var(--g700)">이번 달 결재 요청 중 미처리</span>
+          <span class="caption" style="color:var(--g700)">4분기 사업계획 초안 피드백</span></div>
+      </aside>
+    </div>
+  </section>
+</div>
+<span class="annot" style="left:930px;top:60px">1</span>
+<span class="annot" style="left:224px;top:136px">2</span>
+<span class="annot" style="left:1148px;top:182px">3</span>
+<span class="annot" style="left:1148px;top:370px">4</span>
+<span class="annot" style="left:226px;top:772px">5</span>
+<span class="annot" style="left:1404px;top:182px">6</span>
+</div>
+<script src="assets/shell.js"></script><script src="assets/icons.js"></script>
+</body></html>
